@@ -1,0 +1,5 @@
+<%= form_for [current_list, @task], remote: true do |f| %>
+  <%= f.text_field :title, autofocus: true, autocomplete: false %>
+  <br>
+  <%= @task.errors[:title].first %>
+<% end %>

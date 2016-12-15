@@ -1,0 +1,4 @@
+<li id="list_<%= list.id %>">
+  <%= link_to list.title, list_tasks_path(list) %>
+  <%= link_to '×', list_path(list), method: :delete, remote: true, class: 'delete' %>
+</li>

@@ -1,0 +1,4 @@
+<%= form_for [@list], remote: true do |f| %>
+  <%= f.text_field :title, autocomplete: false %>
+  <%= f.submit %>
+<% end %>
